@@ -8,6 +8,41 @@
     tools:context=".LoginActivity">
 
 
-    
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu E-mail"
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="Insira seu Email"
+        app:startIconDrawable="@drawable/vector_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira Sua Senha"
+        app:endIconMode="password_toggle"
+        app:startIconContentDescription="Insira sua senha"
+        app:startIconDrawable="@drawable/vector_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar" />
 
 </LinearLayout>
